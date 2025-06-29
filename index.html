@@ -10,9 +10,11 @@
 <body>
   <div class="app">
     <h1 id="greeting">Welcome</h1>
-    <button onclick="startPeriod()">Start Period Today</button>
+    <p id="phase-display"></p>
 
-    <h2>Daily Check-In</h2>
+    <button onclick="startPeriod()">📍 Start Period Today</button>
+
+    <h2>🌤️ Daily Check-In</h2>
     <label for="mood">Mood:</label>
     <select id="mood">
       <option value="clear">Clear</option>
@@ -20,13 +22,22 @@
       <option value="overwhelmed">Overwhelmed</option>
       <option value="fragile">Fragile</option>
     </select>
-    <br />
-    <textarea id="notes" placeholder="What's on your mind?"></textarea>
-    <br />
-    <button onclick="saveReflection()">Save Reflection</button>
 
-    <h2>Suggestion</h2>
+    <textarea id="notes" placeholder="What's on your mind today?"></textarea>
+    <button onclick="saveReflection()">💾 Save Reflection</button>
+
+    <h2>💡 Suggestion</h2>
     <p id="suggestion"></p>
+
+    <h2>🧘 Emergency Reset</h2>
+    <div id="emergency-reset" style="display:none;">
+      <p>Breathe in... Hold... Breathe out. You're safe now.</p>
+      <p>Would you like a message from Past You?</p>
+      <p id="past-message">"You're not behind. You’re just healing."</p>
+    </div>
+
+    <h2>🔁 Ritual Cards (Coming Soon)</h2>
+    <button onclick="alert('Coming soon: 3-min rituals to reset your nervous system.')">🌿 Open Ritual</button>
   </div>
   <script src="script.js"></script>
 </body>

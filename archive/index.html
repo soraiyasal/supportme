@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Support Me - PMDD Companion</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <h1 id="greeting">Welcome</h1>
+    <button onclick="startPeriod()">Start Period Today</button>
+
+    <h2>Daily Check-In</h2>
+    <label for="mood">Mood:</label>
+    <select id="mood">
+      <option value="clear">Clear</option>
+      <option value="foggy">Foggy</option>
+      <option value="overwhelmed">Overwhelmed</option>
+      <option value="fragile">Fragile</option>
+    </select>
+    <br />
+    <textarea id="notes" placeholder="What's on your mind?"></textarea>
+    <br />
+    <button onclick="saveReflection()">Save Reflection</button>
+
+    <h2>Suggestion</h2>
+    <p id="suggestion"></p>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
